@@ -1,0 +1,23 @@
+PHẦN A: BẢNG CHE MỜ THÔNG TIN (MASKING TABLE)
+| Thông tin PII thật                  | Nhãn che mờ Placeholder | Loại dữ liệu       |
+|--------------------------------------|-------------------------|--------------------|
+| Phạm Minh C                          | [CUSTOMER_NAME]         | Tên cá nhân        |
+| 0988.111.222                         | [PHONE_NUMBER]          | Số điện thoại      |
+| minhc@gmail.com                      | [EMAIL_ADDRESS]         | Địa chỉ Email      |
+| Căn hộ 502 Chung cư Sunrise, Q7      | [CUSTOMER_ADDRESS]      | Địa chỉ nhà        |
+PHẦN B: VĂN BẢN KHIẾU NẠI ĐÃ ĐƯỢC CHE MỜ (MASKED INPUT)
+"Tôi là [CUSTOMER_NAME] (SĐT: [PHONE_NUMBER], Email: [EMAIL_ADDRESS], ở [CUSTOMER_ADDRESS]). Ngày 20/09 tôi mua 2kg thịt bò Wagyu giá 4.500.000 VNĐ tại MartX District 7 nhưng bị giao chậm 3 tiếng làm hỏng tiệc gia đình. Tôi yêu cầu bồi thường 100%!"
+PHẦN C: PROMPT GỬI AI (YÊU CẦU SOẠN THƯ XIN LỖI)
+Đóng vai trò là Trưởng bộ phận Chăm sóc Khách hàng (Customer Service Manager) của hệ thống siêu thị MartX. Hãy viết một bức thư xin lỗi lịch sự, chân thành gửi tới khách hàng VIP dựa trên thông tin khiếu nại dưới đây. Trong thư, cần thừa nhận lỗi giao hàng chậm làm ảnh hưởng đến gia đình khách, đưa ra phương án bồi thường thỏa đáng (hoàn tiền 100% kèm voucher ưu đãi cho đơn hàng tiếp theo), và cam kết cải thiện chất lượng dịch vụ. Giữ nguyên các nhãn Placeholder trong ngoặc vuông (như [CUSTOMER_NAME], [PHONE_NUMBER],...) để hệ thống tự động thay thế sau.
+Nội dung khiếu nại:
+"Tôi là [CUSTOMER_NAME] (SĐT: [PHONE_NUMBER], Email: [EMAIL_ADDRESS], ở [CUSTOMER_ADDRESS]). Ngày 20/09 tôi mua 2kg thịt bò Wagyu giá 4.500.000 VNĐ tại MartX District 7 nhưng bị giao chậm 3 tiếng làm hỏng tiệc gia đình. Tôi yêu cầu bồi thường 100%!"
+PHẦN D: VĂN BẢN DE-MASK (KẾT QUẢ THƯ XIN LỖI HOÀN CHỈNH SAU KHI KHÔI PHỤC)
+Kính gửi: Anh/Chị Phạm Minh C,
+Lời đầu tiên, bộ phận Chăm sóc Khách hàng của siêu thị MartX District 7 xin gửi lời xin lỗi chân thành và sâu sắc nhất đến anh/chị vì sự cố giao hàng chậm trễ 3 tiếng trong ngày 20/09 vừa qua, khiến cho buổi tiệc gia đình của anh/chị tại Căn hộ 502 Chung cư Sunrise, Q7 không được trọn vẹn. Chúng tôi hoàn toàn thấu hiểu sự bất tiện và không hài lòng của anh/chị đối với đơn hàng 2kg thịt bò Wagyu trị giá 4.500.000 VNĐ lần này.
+Ngay sau khi nhận được phản hồi qua số điện thoại 0988.111.222 và email minhc@gmail.com, ban quản lý siêu thị đã tiến hành kiểm tra lại quy trình vận chuyển của bộ phận giao nhận để xử lý triệt để nguyên nhân. 
+Để khắc phục sự cố và đền bù cho trải nghiệm chưa tốt của một khách hàng VIP như anh/chị, MartX xin phép được thực hiện các phương án sau:
+1. Hoàn tiền 100% giá trị đơn hàng (4.500.000 VNĐ) vào phương thức thanh toán ban đầu của anh/chị.
+2. Gửi tặng anh/chị một Voucher ưu đãi giảm giá 30% áp dụng cho mọi đơn hàng tiếp theo tại MartX.
+Chúng tôi rất mong nhận được sự thông cảm từ anh/chị và hy vọng sẽ tiếp tục được đồng hành, phục vụ anh/chị trong những lần mua sắm tới. Nếu có bất kỳ thắc mắc nào khác, xin vui lòng liên hệ trực tiếp với chúng tôi.
+Trân trọng,  
+Đội ngũ Quản lý MartX District 7
